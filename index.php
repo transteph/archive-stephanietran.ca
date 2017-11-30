@@ -13,10 +13,12 @@
     <!--FAVICON-->
     <link rel="icon" type="image/png" href="favicon.gif" />
 
-    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/gridhover.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css" />
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 	
+<script src="https://use.fontawesome.com/b0dba73639.js"></script>
+
 
     <!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
@@ -56,16 +58,17 @@
 -->
 	<section id="intro">
 			<img id="home-logo" src="images/logo-large.png" alt="Stephanie Tran's logo"/>
-			<div id="sprinkles"></div>
 	</section>
 	<section id="about">
+		<div id="about-text">
 			<h2>About</h2><br>
 			<p> Always thinking outside the box, I’m an ambitious young professional born and raised in Toronto, passionate about social justice,  digital communications and user experience innovations. </p>
             
             <p>I graduated in 2015 at the University of Toronto with an HBA specializing in Peace, Conflict and Justice. After finishing an internship at Amnesty International Canada immediately after that, I grew to truly love the power of digital communications and technology. With its ability to organize activist groups and raise awareness on world issues in an unprecedented way, I want to create and work with digital innovations that can make social justice work more efficient and effective - all the while having fun in the process! </p>
+			</div>
 	</section>
 
-	<section class="intro portfolio">
+	<section class="portfolio">
 			<h1>Portfolio</h1>
 
             <div class="grid">
@@ -158,13 +161,13 @@
                         <span class="fa fa-github-square"></span> 
                     </a>
                 </p>
-		</section>
-		
-        <p id="footer">Stephanie Tran <?php  echo date("Y");  ?> &copy;</p>
-    
-	<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</section>
+	<footer>
+	<p id="footer">Stephanie Tran <?php  echo date("Y");  ?> &copy;</p>
+	</footer>
+	<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
 </body>
 </html>
