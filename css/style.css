@@ -1,0 +1,964 @@
+@import 'https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Ubuntu:300,500';
+/* Eric Meyer CSS Reset */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+
+/* Custom CSS
+ * --------------------------------------- */
+#footer{
+	text-align: center;
+	color:black;
+	margin-top:100px;
+	font-size:80%;
+}
+#social-media{
+	color:black;
+}
+ #social-media a{
+	font-size: 300%;
+    color: black;
+	padding: 10px;
+	transition: all 0.3s;
+ }
+ #social-media a:visited{
+	 color:black;
+ }
+ #social-media a:hover{
+	color:#D92A7B;
+}
+
+    #home-logo{
+        max-width:67vw;
+        position: absolute;
+        right:5%;
+        top:25%;
+    }
+    
+#sprinkles{
+        position: absolute;
+        left:0;
+        top:0;
+        width:38%;
+		height: 100%;
+	background-image: url(../images/sprinkles-bg-mobile.png);
+    background-position: left;
+	background-size: contain;
+	background-repeat: repeat-y;
+    }
+
+
+body{
+	font-family: 'Ubuntu',helvetica;
+    font-weight: 300;
+    font-size:12pt;
+    line-height:1.4;
+	color: #333;
+}
+
+   
+h1{
+	font-size: 4.4em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oleo Script Swash Caps';
+    font-size: 4.4em;
+}
+
+a{
+    text-decoration: none;
+    	font-family: 'Ubuntu',helvetica;
+    font-weight: 300;
+}
+
+#intro{
+	height:600px;
+}
+
+/*About Page */
+
+#clouds-mobile{
+    position: absolute;
+    z-index: 1;
+    max-width: 150%;
+    height:auto;
+    bottom:0px;
+    z-index: 2;
+      -webkit-animation: cloudsMove 40s ease infinite alternate;
+  animation:cloudsMove 40s ease infinite alternate;
+}
+
+#plane{
+	clear:both;
+	width:10%;
+	max-width: 80px;
+	position: absolute;
+	top:2vw;
+	padding:20px;
+	left:55%;
+}
+   #intro-text{
+        float:left;
+        max-width: 100%;
+        margin:10px;
+        margin-left:30px;
+       z-index: 200;
+           transform: translateY(-4vw);
+    }
+    #intro-text h2, #intro-text p{
+        text-align: left;
+        
+        text-shadow: 2px 1px 10px rgba(95, 95, 95, 0.74);
+    
+    }
+    #intro-text h2{
+     color: #ffffff;
+        display: block;
+        text-shadow: -5px 6px #2c2c2c;
+        line-height: 0.8;
+		font-size: 4.4em;
+		margin-top:20px;
+        z-index: 500;
+    }
+    
+    #intro-text p{
+        clear:both;
+        margin-bottom:10px;
+        margin-left: 30px;
+        max-width:80%;
+        color: #ffffff;
+        padding:20px;
+    }
+
+/* Portfolio Page */
+.portfolio h1{
+   color: #6AC8C8;
+        text-shadow: -5px 6px #106671;
+	text-align: center;
+	padding-top:5px;
+	line-height: 1;
+}
+
+/* Grid hover effects by Codrops : https://github.com/codrops/HoverEffectIdeas  */
+
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+}
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 5px;
+	max-width: 45%;
+	max-height: 24vh;
+	text-align: center;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+}
+figure #drake {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+
+
+.grid figure figcaption {
+	padding: 2px;
+	padding-top:20%;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	width: 90%;
+	height: 90%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+    font-family: 'Ubuntu';
+	word-spacing: -0.15em;
+	font-size:1.2em;
+    font-weight: 400;
+	text-shadow: 1px 1px 5px #000000;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+	margin-left: 2px;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: .5px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+
+figure.effect-julia {
+	background: #000000;
+}
+
+.effect-julia #drake{
+		background:#ffffff;
+}
+
+/* Drake text mobile */
+figure.effect-julia #drake-text h2 {
+	margin-top:30px;
+	position: relative;
+	padding: 0 1px 0;
+    color: #fcfcfc;
+	text-align: right;
+	opacity: 1;
+}
+
+figure.effect-julia #drake-text p {
+	display: inline-block;
+	float:right;
+	margin: 0 0 0.25em;
+	padding: 3px 7px;
+	background: rgba(255,255,255,0.9);
+	color: #2f3238;
+	text-align: right;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 80%;
+	opacity: 1;
+}
+
+figure.effect-julia img {
+	max-width: none;
+	height:100%;
+}
+
+figure.effect-julia figcaption {
+	text-align: left;
+}
+
+figure.effect-julia h2 {
+	position: relative;
+	padding: 0 1px 0;
+    color: #fcfcfc;
+}
+
+figure.effect-julia p {
+	display: inline-block;
+	margin: 0 0 0.25em;
+	padding: 3px 7px;
+	background: rgba(255,255,255,0.9);
+	color: #2f3238;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 80%;
+}
+
+ /*  connect Page */
+
+
+.connect{
+	text-align: center;
+    display: block;
+    margin:0 auto;
+    width:80%;
+    
+}
+
+.connect p{
+	text-align: center;
+	font-size: 90%;
+    color: black;
+	width:100%;
+	margin-top: 20px;
+}
+ .connect h2{
+       color: white;
+        text-shadow: -5px 6px #f00b6c;
+	text-align: center;
+	padding-top:50px;
+	line-height: 1;
+    }
+
+.socialmedia{
+	display: inline-block;
+	margin:0 auto;
+	width:8%;
+	margin-top:100px;
+	max-width: 50px;
+	margin-right:10px;
+}
+#footer{
+	padding-bottom: 50px;
+}
+
+/*  Mobile Nav  */
+#show-button{
+    display: block;
+    position: fixed;
+    top:0;
+    right:0;
+    color: white;
+    font-size: 250%;
+    z-index: 9800;
+    text-shadow: 2px 2px 3px black;
+    }
+
+#hide-button,
+#nav ul{
+    display: none;
+}
+#nav:target #show-button{
+        display: none;
+    }
+#nav:target #hide-button{
+        display: block;
+        position: fixed;
+        top:0;
+        right:0;
+        color: white;
+        font-size: 300%;
+        z-index: 8555;
+        text-shadow: 2px 2px 3px black;
+    }	
+#nav{
+    z-index: 9900;
+    position: fixed;
+}
+#nav:target #nav-menu{
+        display: block;
+        position: fixed;
+        top:-70px;
+        right:0;
+        width:100%;
+        height:100%;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding-top:30vh;
+        z-index: 8444;
+    }
+
+#nav:target ul li{
+		margin:0 auto;
+        margin-top:30px;
+	    width:50%;
+        display: block;
+        z-index: 8878;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+#nav:target ul li a{
+    text-transform: uppercase;
+    color: black;
+    padding:10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width:100%;
+    margin:0 auto;
+    letter-spacing: 5px;
+}
+#nav:target ul li:nth-child(1){
+	 -webkit-animation: slideInRight .3s 1 ease-out .1s  both;        
+        animation-name: slideInRight .3s 1 ease-out .1s both;
+}
+#nav:target ul li:nth-child(2){
+	 -webkit-animation: slideInRight .3s 1 ease-out .2s both;        
+        animation-name: slideInRight .3s 1 ease-out .2s both;
+}
+#nav:target ul li:nth-child(3){
+	 -webkit-animation: slideInRight .3s 1 ease-out .3s both;        
+        animation-name: slideInRight .3s 1 ease-out .3s both;
+}
+#nav:target ul li:nth-child(4){
+	 -webkit-animation: slideInRight .3s 1 ease-out .4s both;        
+        animation-name: slideInRight .3s 1 ease-out .4s both;
+}
+
+#nav:target ul li a:hover{
+    background-color: pink;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    display: none!important;
+}
+	#fp-nav,#fp-nav.right ,#fp-nav.left ,.fp-slidesNav,.fp-slidesNav.bottom,.fp-slidesNav.top,#fp-nav ul,,.fp-slidesNav ul,#fp-nav ul li,
+.fp-slidesNav ul li,.fp-slidesNav ul li,#fp-nav ul li a,
+.fp-slidesNav ul li a,#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span,#fp-nav ul li a span,.fp-slidesNav ul li a span,#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span,#fp-nav ul li .fp-tooltip,#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip,#fp-nav ul li .fp-tooltip.right,#fp-nav ul li .fp-tooltip.left{
+	display: none !important;
+	}
+  /* clouds */
+    
+ @keyframes cloudsMove {
+
+  0%{
+      transform:translateX(-300px);
+  }
+	50%{
+transform:translateX(300px);
+  }
+
+}
+/* --------------------- MEDIA QUERIES ------------------ */
+
+
+@media only screen and (min-width: 820px) {
+	
+   /* For desktop: */
+    .col-1 {width: 100%;}
+    .col-12 {width: 50%;}
+    .col-13 {width: 33.33%;}
+    .col-14 {width: 25%;}
+	body{
+		font-size: 2vw;
+	}
+
+    
+	  #home-logo{
+        max-width:70vw;
+        position: absolute;
+        right:0;
+        top:30%;
+    }
+    
+  #sprinkles{
+        position: absolute;
+        left:0;
+        top:0;
+        width:36%;
+		height: 100%;
+	background-image: url(../images/sprinkles-bg.png);
+	background-size: cover;
+	background-repeat: repeat-y;
+    }
+    
+	.intro{
+	margin-top:5px;
+}
+	
+    	/* Nav
+	* --------------------------------------- */
+    #nav,
+     #nav ul{
+        display: block;
+    }
+    
+    #show-button{
+        display: none;
+    }
+    
+	#nav{
+        opacity: 1;
+        bottom:0;
+		position:fixed;
+		height:4vh;
+		display:block;
+		width: 100%;
+		background: rgb(255, 255, 255);
+		z-index:9;
+		text-align:center;
+		color: rgba(29, 28, 28, 0.93);
+		padding-bottom:20px;
+		border-top:1px solid #363636;
+	}
+
+    #nav li{
+        display: inline-block;
+        margin-right:30px;
+        font-size: 0.5em;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-decoration: none;
+        color: black;
+        padding:5px;
+        	padding-bottom:15px;
+	padding-top:15px;	
+         -webkit-transform:translateY(  -10px );
+        transform:translateY(  -10px );
+    }
+    
+    nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 10px;
+	outline: none;
+	color: #121212;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 13px;
+        margin-top: 0;
+}
+    /*** Nav link hover effects by Codrops http://tympanus.net/codrops/2013/08/06/creative-link-effects/ ***/
+    
+.cl-effect-14 a {
+	padding: 0 20px;
+	height: 35px;
+	line-height: 35px;
+}
+.cl-effect-14 a::before,
+.cl-effect-14 a::after {
+	position: absolute;
+	width: 35px;
+	height: 2px;
+	background: #000000;
+	content: '';
+	opacity: 0.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+.cl-effect-14 a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.cl-effect-14 a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::before,
+.cl-effect-14 a:focus::after {
+	opacity: 1;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+	
+	/*  Drake imge */
+	figure.effect-julia #drake-text h2 {
+	margin-top:80px;
+	position: relative;
+	padding: 0 1px 0;
+		opacity: 0;
+    color: #fcfcfc;
+	text-align: right;
+}
+	figure.effect-julia #drake-text:hover h2 {
+		opacity: 1;
+		transition: all 1s;
+
+}
+
+    #home-logo{
+        max-width:60vw;
+        position: absolute;
+        right:10%;
+        top:15%;
+    }
+ 
+/* About Page */
+	#plane{
+	clear:both;
+	position: absolute;
+	width:8%;
+	top:1vw;
+	left:63%;
+		cursor: pointer;
+}
+	
+   #clouds{
+       display: block;
+       position: absolute;
+       top:30px;
+       margin-top:0;
+       z-index: 1;
+    height:90%;
+    -webkit-animation: cloudsMove 30s ease infinite alternate;
+  animation:cloudsMove 30s ease infinite alternate;
+} 
+    #clouds-mobile{
+        display: none;
+    }
+    
+    
+	.about h2{
+		margin-bottom: 10px;
+		font-size: 4.4em;
+        z-index: 12;
+	}
+    #intro-text{
+        max-width: 60%;
+        float:right;
+    }
+    #intro-text h2, #intro-text p{
+        text-align: left;
+        float:left;
+    }
+  
+    #intro-text p{
+        clear:both;
+        max-width:90%;
+        max-width:600px;
+        font-size:16px;
+		margin-right:30px;
+    }
+ /* Desktop Portfolio page */
+	.portfolio h1{
+		padding-bottom: 10px;
+	}
+	
+	/* Grid hover effects by Codrops : https://github.com/codrops/HoverEffectIdeas  */
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding-left: 20px;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+	
+}
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 2px;
+	max-height: 30vh;
+	max-width: 30%;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	height: 100%;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+    
+}
+
+.grid figure figcaption {
+	padding: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size:16px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 10%;
+	left: 5px;
+	width: 90%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+        opacity:1;
+	word-spacing: -0.15em;
+	font-weight: 300;
+	text-shadow: 1px 1px 5px #000000;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+	margin-left: 3px;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 12px;
+    font-weight:300;
+}
+figure.effect-julia {
+	background: #000000;
+}
+
+figure.effect-julia img {
+	max-width: none;
+	height:100%;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-julia figcaption {
+	text-align: left;
+}
+
+figure.effect-julia h2 {
+	position: relative;
+	padding: 0.5em 0;
+    color: #fcfcfc;
+        opacity:1;
+}
+
+figure.effect-julia p {
+	display: inline-block;
+	margin: 0 0 0.25em;
+	padding: 0.4em 1em;
+	background: rgba(255,255,255,0.9);
+	color: #2f3238;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 75%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-360px,0,0);
+	transform: translate3d(-360px,0,0);
+}
+
+figure.effect-julia p:first-child {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+figure.effect-julia p:nth-of-type(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-julia p:nth-of-type(3) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-julia:hover p:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+figure.effect-julia:hover p:nth-of-type(2) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-julia:hover p:nth-of-type(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-julia:hover img {
+	opacity: 0.4;
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+
+figure.effect-julia:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+  
+	 /*  connect Page */
+	
+	.connect p{
+		font-size: 13px;
+	}
+	.connect h2{
+		font-size: 450%;
+		line-height: 1;
+		margin-bottom: 20px;
+         color: white;
+        text-shadow: -5px 6px #f00b6c;
+
+	}
+
+	#footer{
+	padding-bottom: 100px;
+	}
+	.socialmedia{
+		margin-top:50px;
+		width:40px;
+	}
+	
+    
+	#home-logo:hover{
+		   -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+	}
+    #sprinkles:hover{
+		   -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+	}
+
+	
+    
+} 
+/*end desktop media query */
+
+@media screen and (max-width: 50em) {
+	.content {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.grid figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+	
+}
+@media only screen and (max-width: 480px) {
+     .plane-box img{
+	width:20%;
+	position: absolute;
+	  -webkit-transform: rotate(15deg);
+      transform: rotate(15deg);
+	left:35vw;
+	  top:16vh;
+}
+}
+
+/*icon fonts*/
+@font-face {
+  font-family: "menu";
+  src:url("../fonts/menu.eot");
+  src:url("../fonts/menu.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/menu.woff") format("woff"),
+    url("../fonts/menu.ttf") format("truetype"),
+    url("../fonts/menu.svg#menu") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "menu" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "menu" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\63";
+}
+.icon-hamburger:before {
+  content: "\68";
+}
+
+
+    
