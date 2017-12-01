@@ -1,135 +1,52 @@
-@import 'https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Ubuntu:300,500';
+@import 'https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Ubuntu:300,500|Righteous';
 
-/* Eric Meyer CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline
+	vertical-align: baseline;
 }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-main {
-	display: block
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
 body {
-	line-height: 1
+	line-height: 1;
 }
-
-ol,
-ul {
-	list-style: none
+ol, ul {
+	list-style: none;
 }
-
-blockquote,
-q {
-	quotes: none
+blockquote, q {
+	quotes: none;
 }
-
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
+blockquote:before, blockquote:after,
+q:before, q:after {
 	content: '';
-	content: none
+	content: none;
 }
-
 table {
 	border-collapse: collapse;
-	border-spacing: 0
+	border-spacing: 0;
 }
 
 #social-media a {
@@ -146,20 +63,25 @@ table {
 #social-media a:hover {
 	color: #D92A7B;
 }
+.container{
+	width:100%;
+	overflow:hidden;
+}
 
-#home-logo {
-	max-width: 67vw;
-	position: absolute;
-	right: 5%;
-	top: 25%;
+main{
+	transform: translateX(-5000px);
+	z-index: 1;
 }
 
 body {
-	font-family: 'Ubuntu', helvetica, sans-serif !important;
+	font-family: 'Ubuntu', helvetica, sans-serif ;
 	font-weight: 300;
 	font-size: 17px;
 	line-height: 1.4;
 	color: #333;
+	background-color: #B24592;
+	background: -webkit-linear-gradient(to left, #F15F79, #B24592);
+	background: linear-gradient(to left, #F15F79, #B24592);
 }
 
 h1 {
@@ -172,39 +94,126 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Oleo Script Swash Caps', cursive !important;
+	font-family: 'Oleo Script Swash Caps', cursive ;
 	font-size: 4.4em;
 }
 
 a {
 	text-decoration: none;
-	font-family: 'Ubuntu', helvetica, !important;
+	font-family: 'Ubuntu', helvetica, ;
 	font-weight: 300;
 }
+b{
+	font-weight:500;
+}
 
+#loader{
+	margin:0 auto;
+	position:absolute;
+	left:20%;
+}
+#intro h1 {
+	display: inline-block;
+	color: white;
+	font-family: 'Righteous', serif;
+	font-size: 12em; 
+	text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+	}
+	#intro h1:after {
+	  content: attr(data-shadow);
+	  position: absolute;
+	  top: .06em; left: .06em;
+	  z-index: -1;
+	  text-shadow: none;
+	  background-image:
+		linear-gradient(
+		  45deg,
+		  transparent 45%,
+		  hsla(48,20%,90%,1) 45%,
+		  hsla(48,20%,90%,1) 55%,
+		  transparent 0
+		  );
+	  background-size: .05em .05em;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	
+	  animation: shad-anim 15s linear infinite;
+	  }
+  
+  @keyframes shad-anim {
+	0% {background-position: 0 0}
+	0% {background-position: 100% -100%}
+	}
 section {
 	overflow: hidden;
-	padding: 60px 20px;
+	padding: 60px 10%;
 	box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 #intro {
-	height: 550px;
-	display: block;
-	background-color: #DB59A1;
+	height:50vh;
 	overflow: hidden;
+	background-color: #DB59A1;
 	background-image: url(../images/sprinkles-bg-mobile.png);
 	background-position: left;
-	background-size: contain;
 	background-repeat: repeat-y;
 }
-
-
+#home-logo {
+    position: relative;
+    transition: all 0.3s ease-in;
+    width: 20%;
+    max-width: 200px;
+    min-width: 100px;
+    z-index: 4000;
+}
+#home-logo:hover {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
 /*About Page */
 
 #about {
 	background-color: #3FBFFF;
 	color: white;
+}
+#about p {
+	text-shadow: 2px 1px 10px rgba(95, 95, 95, 0.74);
+}
+#about h2{
+	display:block;
+	width:100%;
+	text-shadow: -5px 6px #2c2c2c;
+	line-height: 0.8;
+	font-size: 4.4em;
+	padding: 20px 0px 20px 0px;
+}
+#about-text{
+	width:100%;
+}
+#about h3{
+	font-size:130%;
+	font-family:'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding-bottom:15px;
+}
+.img-circle {
+	float:left;
+	border-radius: 50%;
+	width:150px;
+	border:2px solid white;
+	box-shadow:1px 1px 8px rgba(0, 0, 0, 0.264);
+}
+
+#about-details{
+	float:left;
+	padding-left:20px;
+	width:50%;
+}
+#about-text p {
+	color: #ffffff;
 }
 
 #clouds-mobile {
@@ -228,36 +237,12 @@ section {
 	left: 55%;
 }
 
-#about-text {
-	clear: both;
-	margin: 0 auto;
-}
-
-#about-text h2,
-#about p {
-	text-align: left;
-	text-shadow: 2px 1px 10px rgba(95, 95, 95, 0.74);
-}
-
-#about-text h2 {
-	color: #ffffff;
-	display: block;
-	text-shadow: -5px 6px #2c2c2c;
-	line-height: 0.8;
-	font-size: 4.4em;
-	padding-top: 20px;
-}
-
-#about-text p {
-	clear: both;
-	color: #ffffff;
-	padding: 20px;
-}
-
-
 /* Portfolio Page */
+section#portfolio{
+	background-color:white;
+}
 
-.portfolio h1 {
+#portfolio h1 {
 	color: #6AC8C8;
 	text-shadow: -5px 6px #106671;
 	text-align: center;
@@ -268,13 +253,13 @@ section {
 
 /*  connect Page */
 
-section.connect {
+section#connect {
 	background-color: rgb(32, 197, 222);
 	color: white;
 	text-align: center;
 }
 
-.connect p {
+#connect p {
 	text-align: center;
 	font-size: 90%;
 	color: white;
@@ -282,12 +267,23 @@ section.connect {
 	margin-top: 20px;
 }
 
-.connect h2 {
+#connect h2 {
 	color: white;
 	text-shadow: -5px 6px #f00b6c;
 	text-align: center;
 	padding-top: 50px;
 	line-height: 1;
+}
+
+footer {
+	padding: 50px 20px;
+	text-align: center;
+	color: white;
+	background-color: rgb(81, 81, 81);
+}
+.socialmedia {
+	margin-top: 50px;
+	width: 40px;
 }
 
 
@@ -420,12 +416,6 @@ section.connect {
 	body {
 		font-size: 2vw;
 	}
-	#home-logo {
-		max-width: 70vw;
-		position: absolute;
-		right: 0;
-		top: 30%;
-	}
 	#sprinkles {
 		position: absolute;
 		left: 0;
@@ -436,8 +426,8 @@ section.connect {
 		background-size: cover;
 		background-repeat: repeat-y;
 	}
-	/* Nav
-	* --------------------------------------- */
+	/* -- Desktop Nav -- */
+	
 	#nav,
 	#nav ul {
 		display: block;
@@ -446,54 +436,39 @@ section.connect {
 		display: none;
 	}
 	#nav {
+		position: relative;
 		opacity: 1;
-		bottom: 0;
-		position: fixed;
 		height: 4vh;
 		display: block;
 		width: 100%;
 		background: rgb(255, 255, 255);
 		z-index: 9;
-		text-align: center;
+		text-align: right;
 		color: rgba(29, 28, 28, 0.93);
-		padding-bottom: 20px;
-		border-top: 1px solid #363636;
+		border-bottom: 1px solid #363636;
+		padding: 4px 0px;
 	}
 	#nav li {
 		display: inline-block;
 		margin-right: 30px;
-		font-size: 0.5em;
+		font-size: 16px;
 		text-transform: uppercase;
 		letter-spacing: 5px;
-		text-decoration: none;
 		color: black;
-		padding: 5px;
-		padding-bottom: 15px;
-		padding-top: 15px;
-		-webkit-transform: translateY( -10px);
-		transform: translateY( -10px);
+		padding:5px 0px;
 	}
 	nav a {
-		position: relative;
-		display: inline-block;
-		margin: 15px 10px;
-		outline: none;
 		color: #121212;
-		text-decoration: none;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		font-weight: 300;
 		text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-		font-size: 13px;
-		margin-top: 0;
-	}
-	#home-logo {
-		max-width: 60vw;
-		position: absolute;
-		right: 10%;
-		top: 15%;
 	}
 	/* Desktop About Page */
+	.img-circle {
+		min-width:150px;
+		width:30%;
+	}
 	#plane {
 		clear: both;
 		position: absolute;
@@ -518,6 +493,7 @@ section.connect {
 	#about-text {
 		float: left;
 		width: 60%;
+		margin-left: 50px;
 	}
 	.about h2 {
 		margin-bottom: 10px;
@@ -530,41 +506,22 @@ section.connect {
 		float: left;
 	}
 	#about-text p {
-		clear: both;
 		font-size: 16px;
 	}
 	/* Desktop Portfolio page */
-	.portfolio h1 {
+	#portfolio h1 {
 		padding-bottom: 10px;
 	}
 	/*  connect Page */
-	.connect p {
+	#connect p {
 		font-size: 13px;
 	}
-	.connect h2 {
+	#connect h2 {
 		font-size: 450%;
 		line-height: 1;
 		margin-bottom: 20px;
 		color: white;
 		text-shadow: -5px 6px #f00b6c;
-	}
-	footer {
-		padding: 50px 20px;
-		text-align: center;
-		color: white;
-		background-color: rgb(81, 81, 81);
-	}
-	.socialmedia {
-		margin-top: 50px;
-		width: 40px;
-	}
-	#home-logo:hover {
-		-moz-transform: scaleX(-1);
-		-o-transform: scaleX(-1);
-		-webkit-transform: scaleX(-1);
-		transform: scaleX(-1);
-		filter: FlipH;
-		-ms-filter: "FlipH";
 	}
 	#sprinkles:hover {
 		-moz-transform: scaleX(-1);
