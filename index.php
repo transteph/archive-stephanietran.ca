@@ -126,7 +126,7 @@
 									<p>HTML, CSS, JavaScript, jQuery</p>
 									
 								</div>
-								<a href="http://stephanietran.ca/calendar-portfolio/index.html">View more</a>
+								<a href="http://portfolio.stephanietran.ca/calendar">View more</a>
 							</figcaption>			
 						</figure>
 
