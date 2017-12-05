@@ -76,7 +76,7 @@ main{
 body {
 	font-family: 'Ubuntu', helvetica, sans-serif ;
 	font-weight: 300;
-	font-size: 17px;
+	font-size: 18px;
 	line-height: 1.4;
 	color: #333;
 	background-color: #B24592;
@@ -176,12 +176,17 @@ section {
 }
 /*About Page */
 
+.flip{
+	transition:all 0.2s ease-in;
+}
+.flip:hover{
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 #about {
 	background-color: #3FBFFF;
 	color: white;
-}
-#about p {
-	text-shadow: 2px 1px 10px rgba(95, 95, 95, 0.74);
+	overflow:hidden;
 }
 #about h2{
 	display:block;
@@ -193,11 +198,17 @@ section {
 }
 #about-text{
 	width:100%;
+	display: block;
+	position: relative;
+	z-index: 600;
 }
 #about h3{
 	font-size:130%;
+	font-weight:500;
 	font-family:'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	padding-bottom:15px;
+	background-color: black;
+	padding: 7px;
+	display: inline-block;
 }
 .img-circle {
 	float:left;
@@ -205,6 +216,7 @@ section {
 	width:150px;
 	border:2px solid white;
 	box-shadow:1px 1px 8px rgba(0, 0, 0, 0.264);
+	margin-bottom: 20px;
 }
 
 #about-details{
@@ -214,28 +226,21 @@ section {
 }
 #about-text p {
 	color: #ffffff;
+	color: white;
+	background-color: black;
+	padding: 2px 7px;
+	display: inline-block;
 }
 
-#clouds-mobile {
+#clouds {
 	position: absolute;
-	z-index: 1;
 	max-width: 150%;
 	height: auto;
-	bottom: 0px;
 	z-index: 2;
-	-webkit-animation: cloudsMove 40s ease infinite alternate;
-	animation: cloudsMove 40s ease infinite alternate;
+	-webkit-animation: cloudsMove 45s linear infinite alternate;
+	animation: cloudsMove 45s linear infinite alternate;
 }
 
-#plane {
-	clear: both;
-	width: 10%;
-	max-width: 80px;
-	position: absolute;
-	top: 2vw;
-	padding: 20px;
-	left: 55%;
-}
 
 /* Portfolio Page */
 section#portfolio{
@@ -389,10 +394,10 @@ footer {
 
 @keyframes cloudsMove {
 	0% {
-		transform: translateX(-300px);
+		transform: translateX(70vw);
 	}
 	50% {
-		transform: translateX(300px);
+		transform: translateX(70vw);
 	}
 }
 
@@ -477,23 +482,13 @@ footer {
 		left: 63%;
 		cursor: pointer;
 	}
-	#clouds {
-		display: block;
-		position: absolute;
-		top: 30px;
-		margin-top: 0;
-		z-index: 1;
-		height: 90%;
-		-webkit-animation: cloudsMove 30s ease infinite alternate;
-		animation: cloudsMove 30s ease infinite alternate;
-	}
-	#clouds-mobile {
-		display: none;
-	}
 	#about-text {
 		float: left;
 		width: 60%;
 		margin-left: 50px;
+		display: block;
+		position: relative;
+		z-index: 600;
 	}
 	.about h2 {
 		margin-bottom: 10px;
@@ -503,9 +498,9 @@ footer {
 	#about-text h2,
 	#about-text p {
 		text-align: left;
-		float: left;
 	}
 	#about-text p {
+		margin-top:10px;
 		font-size: 16px;
 	}
 	/* Desktop Portfolio page */

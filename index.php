@@ -49,13 +49,16 @@
 				<img id="home-logo" src="images/logo-small.png" alt="Stephanie Tran's logo"/>
 		</section>
 		<section id="about">
-			<div id="about-text">
-				<img class="img-circle" src="images/stephtran.jpg">
-				<div id="about-details">
-					<h3>I'm Stephanie.</h3>
-					<p><b>Toronto, ON</b></p>
+			<div id="clouds">
+				<img src="images/clouds-mobile.png" alt="Clouds from Super Mario"></div>
+				<div id="about-text">
+					<img class="img-circle flip" src="images/stephtran.jpg">
+					<div id="about-details">
+						<h3>I'm Stephanie.</h3><br/>
+						<p><b>Toronto, ON</b></p><br/>
+						<p>I enjoy building things. </p>
+					</div>
 				</div>
-			</div>
 		</section>
 
 		<section id="portfolio">
@@ -63,13 +66,13 @@
 
 				<div class="grid">
 						<figure class="effect-julia">
-							<img src="images/amnesty-international-canada-youth-stephanie-tran-website.png" alt="Screenshot of Amnesty International Canada's Youth website."/>
+							<img src="images/react-app-screenshot.PNG" alt="Screenshot of the application page."/>
 							<figcaption>
-								<h2>AI Canada <span>Youth</span></h2>
+								<h2>Overview <span>React App</span></h2>
 								<div>
-									<p>WordPress, PHP, jQuery, CSS3</p>
+									<p>React, Node.js, Express, MongoDB, Javascript, jQuery, Bootstrap, HTML, CSS</p>
 								</div>
-								<!-- <a href="http://stephanietran.ca/modelportfolio/index.html">View more</a> -->
+								<a href="http://portfolio.stephanietran.ca/react-app">View more</a>
 							</figcaption>			
 						</figure>
 
@@ -80,7 +83,7 @@
 								<div>
 									<p>WordPress, PHP, jQuery, CSS3</p>
 								</div>
-								<a href="http://iwelcome.aito.ca/">View more</a>
+								<a href="http://portfolio.stephanietran.ca/iwelcome">View more</a>
 							</figcaption>			
 						</figure>
 
@@ -91,19 +94,19 @@
 								<div>
 									<p>WordPress, PHP, jQuery, CSS3</p>
 								</div>
-								<a href="http://aito.ca/reelawareness/">View more</a>
+								<a href="http://portfolio.stephanietran.ca/reel-awareness">View more</a>
 							</figcaption>			
 						</figure>
 
 
 						<figure class="effect-julia striped">
-							<img src="images/21-01.png" alt="img21"/>
+							<img src="images/ko-db.PNG" alt="screenshot of application page."/>
 							<figcaption>
-								<h2>Model <span>Portfolio</span></h2>
+								<h2>Teams<span>Database App</span></h2>
 								<div>
-									<p>HTML &amp; CSS</p>
+									<p>Node.js, Express, MongoDB, Javascript, jQuery, Bootstrap, Knockout.js, HTML, CSS</p>
 								</div>
-								<a href="http://stephanietran.ca/modelportfolio/index.html">View more</a>
+								<a href="http://portfolio.stephanietran.ca/teams-db">View more</a>
 							</figcaption>			
 						</figure>
 
@@ -147,7 +150,7 @@
 						<a href="https://linkedin.com/in/transteph" alt="Stephanie Tran's Linkedin">
 							<span class="fa  fa-linkedin-square "></span> 
 						</a>
-						<a href="https://github.com/transteph" alt="Stephanie Tran's Linkedin">
+						<a href="https://github.com/transteph" alt="Stephanie Tran's GitHub">
 							<span class="fa fa-github-square"></span> 
 						</a>
 					</p>
