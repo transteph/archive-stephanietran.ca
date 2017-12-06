@@ -211,7 +211,7 @@ section {
 	display: inline-block;
 }
 .img-circle {
-	float:left;
+	float:none;
 	border-radius: 50%;
 	width:150px;
 	border:2px solid white;
@@ -220,25 +220,24 @@ section {
 }
 
 #about-details{
-	float:left;
-	padding-left:20px;
-	width:50%;
+	width: 100%;
 }
 #about-text p {
 	color: #ffffff;
 	color: white;
 	background-color: black;
 	padding: 2px 7px;
+	font-size:18px;
 	display: inline-block;
 }
 
 #clouds {
 	position: absolute;
-	max-width: 150%;
+	width:100%;
 	height: auto;
 	z-index: 2;
-	-webkit-animation: cloudsMove 45s linear infinite alternate;
-	animation: cloudsMove 45s linear infinite alternate;
+	-webkit-animation: cloudsMove 40s  infinite alternate;
+	animation: cloudsMove 40s infinite alternate;
 }
 
 
@@ -394,7 +393,7 @@ footer {
 
 @keyframes cloudsMove {
 	0% {
-		transform: translateX(70vw);
+		transform: translateX(-70vw);
 	}
 	50% {
 		transform: translateX(70vw);
@@ -473,26 +472,23 @@ footer {
 	.img-circle {
 		min-width:150px;
 		width:30%;
-	}
-	#plane {
-		clear: both;
-		position: absolute;
-		width: 8%;
-		top: 1vw;
-		left: 63%;
-		cursor: pointer;
+
+		float:left;
+		border-radius: 50%;
+		border:2px solid white;
+		box-shadow:1px 1px 8px rgba(0, 0, 0, 0.264);
+		margin-bottom: 20px;
 	}
 	#about-text {
 		float: left;
-		width: 60%;
-		margin-left: 50px;
+		width: 85%;
 		display: block;
 		position: relative;
 		z-index: 600;
 	}
 	.about h2 {
 		margin-bottom: 10px;
-		font-size: 4.4em;
+		font-size: 200%;
 		z-index: 12;
 	}
 	#about-text h2,
@@ -501,7 +497,13 @@ footer {
 	}
 	#about-text p {
 		margin-top:10px;
-		font-size: 16px;
+		font-size:100%;
+	}
+	#about-details{
+		float:left;
+		margin-left:10px;
+		width:65%;
+		
 	}
 	/* Desktop Portfolio page */
 	#portfolio h1 {
