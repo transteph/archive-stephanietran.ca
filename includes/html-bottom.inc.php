@@ -1,14 +1,20 @@
-    <!-- page content ends -->
-    	<footer> &copy; Stephanie Tran <?php echo date ( 'Y' ); ?>
-                            <div class="footer-social-icons" >
-								<ul class="social-icons">
-									<li><a href="https://www.twitter.com/stephhtrann" target="_blank" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/transteph" target="_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-								
-								</ul>
-							</div>
-    </footer>
+<footer>
+	<p id="footer">Stephanie Tran <?php  echo date("Y");  ?> &copy;</p>
+</footer>
+</main>
 </div>
-</body>
 
+<!-- scripts -->
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/jquery.transit.min.js" type="text/javascript"></script>
+<script src="https://use.fontawesome.com/b0dba73639.js"></script>
+<script>
+	$(window).load(function(){
+	$('main').transition({ x: '0px', delay:800 }, 2000, 'snap');
+	$('#loader').setTimeout(() => {
+	hide(); 
+	}, 3000);
+	});
+</script>
+</body>
 </html>
