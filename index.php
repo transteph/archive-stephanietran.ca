@@ -28,7 +28,12 @@
 						<h3>I'm Stephanie.</h3><br/>
 						<p><b>Toronto, ON</b></p><br/>
 						<ul>
-							<li>I enjoy building things.</li>
+							<li>
+								I enjoy building things. 
+									<span role="img" aria-label="Computer">
+										<i class="em em-computer"></i>
+									</span>
+						</li>
 						</ul>
 					</div>
 				</div>
