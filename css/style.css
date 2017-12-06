@@ -222,7 +222,11 @@ section {
 #about-details{
 	width: 100%;
 }
-#about-text p {
+#about-text ul{
+	margin-top:20px;
+}
+#about-text p,
+#about-text ul li {
 	color: #ffffff;
 	color: white;
 	background-color: black;
@@ -285,6 +289,14 @@ footer {
 	color: white;
 	background-color: rgb(81, 81, 81);
 }
+footer p{
+	padding:20px;
+	text-align: center;
+	font-size: 80%;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
 .socialmedia {
 	margin-top: 50px;
 	width: 40px;
@@ -416,9 +428,6 @@ footer {
 	}
 	.col-14 {
 		width: 25%;
-	}
-	body {
-		font-size: 2vw;
 	}
 	#sprinkles {
 		position: absolute;

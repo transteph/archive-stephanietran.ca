@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/gridhover.css" />
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
          <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>

@@ -1,5 +1,5 @@
 <footer>
-	<p id="footer">Stephanie Tran <?php  echo date("Y");  ?> &copy;</p>
+	<p>Stephanie Tran <?php  echo date("Y");  ?> &copy;</p>
 </footer>
 </main>
 </div>
