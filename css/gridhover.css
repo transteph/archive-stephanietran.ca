@@ -7,15 +7,15 @@
 .grid figure figcaption,
 .grid figure figcaption > a{position:absolute;top:0px;left:5px;width:90%;height:90%;}
 .grid figure figcaption > a{z-index:1000;text-indent:200%;white-space:nowrap;font-size:0;opacity:0;}
-.grid figure h2{font-family:'Ubuntu', sans-serif !important;word-spacing:-0.15em;font-size:1.2em;font-weight:400;text-shadow:1px 1px 5px #000000;}
-.grid figure h2 span{font-weight:800;margin-left:2px;}
-.grid figure h2,
+.grid figure h3{font-family:'Ubuntu', sans-serif !important;word-spacing:-0.15em;font-size:1.2em;font-weight:400;text-shadow:1px 1px 5px #000000;}
+.grid figure h3 span{font-weight:800;margin-left:2px;}
+.grid figure h3,
 .grid figure p{margin:0;}
 .grid figure p{letter-spacing:.5px;font-family:'Ubuntu';font-weight:300;}
 figure.effect-julia{background:#000000;}
 figure.effect-julia img{max-width:none;height:100%;}
 figure.effect-julia figcaption{text-align:left;}
-figure.effect-julia h2{position:relative;padding:0 1px 0;color:#fcfcfc;}
+figure.effect-julia h3{position:relative;padding:0 1px 0;color:#fcfcfc;}
 figure.effect-julia p{display:inline-block;margin:0 0 0.25em;padding:3px 7px;background:rgba(255,255,255,0.9);color:#2f3238;text-transform:none;font-weight:500;font-size:80%;}
 figure.effect-julia p:nth-of-type(3){-webkit-transition-delay:0.05s;transition-delay:0.05s;}
 figure.effect-julia:hover p:first-child{-webkit-transition-delay:0s;transition-delay:0s;}
@@ -25,9 +25,9 @@ figure.effect-julia:hover img{opacity:0.4;-webkit-transform:scale3d(1.1,1.1,1);t
 figure.effect-julia:hover p{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}
 figure.effect-julia p:nth-of-type(3){-webkit-transition-delay:0.05s;transition-delay:0.05s;}
 .grid figure figcaption > a{z-index:1000;text-indent:200%;white-space:nowrap;font-size:0;opacity:0;}
-.grid figure h2{opacity:1;word-spacing:-0.15em;font-weight:300;text-shadow:1px 1px 5px #000000;}
-.grid figure h2 span{font-weight:800;margin-left:3px;}
-.grid figure h2,
+.grid figure h3{opacity:1;word-spacing:-0.15em;font-weight:300;text-shadow:1px 1px 5px #000000;}
+.grid figure h3 span{font-weight:800;margin-left:3px;}
+.grid figure h3,
 .grid figure p{margin:0;}
 .grid figure p{letter-spacing:1px;font-size:12px;font-weight:300;}
 figure.effect-julia:after{content:attr(data-shadow);position:absolute;top:.06em;left:.06em;z-index:-1;text-shadow:none;background-image:linear-gradient(45deg,
@@ -41,7 +41,7 @@ transparent 0);background-size:.05em .05em;-webkit-background-clip:text;-webkit-
 figure.effect-julia{background:#000000;}
 figure.effect-julia img{max-width:none;height:100%;-webkit-transition:opacity 1s, -webkit-transform 1s;transition:opacity 1s, transform 1s;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
 figure.effect-julia figcaption{text-align:left;}
-figure.effect-julia h2{position:relative;padding:0.5em 0;color:#fcfcfc;opacity:1;}
+figure.effect-julia h3{position:relative;padding:0.5em 0;color:#fcfcfc;opacity:1;}
 figure.effect-julia p{display:inline-block;margin:0 0 0.25em;padding:0.4em 1em;background:rgba(255,255,255,0.9);color:#2f3238;text-transform:none;font-weight:500;font-size:75%;-webkit-transition:opacity 0.35s, -webkit-transform 0.35s;transition:opacity 0.35s, transform 0.35s;-webkit-transform:translate3d(-360px,0,0);transform:translate3d(-360px,0,0);}
 figure.effect-julia p:first-child{-webkit-transition-delay:0.15s;transition-delay:0.15s;}
 figure.effect-julia p:nth-of-type(2){-webkit-transition-delay:0.1s;transition-delay:0.1s;}

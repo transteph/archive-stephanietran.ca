@@ -15,18 +15,22 @@
 	<main>
 		<!-- Nav bar -->
 		<?php include ( 'includes/nav.inc.php' ); ?>
+
+		<!-- Top Section -->
 		<section id="intro">
-		<h1 data-shadow="Hello!">Hello!</h1>
+				<span id="hello-header" data-shadow="Hello!">Hello!</span>
 				<img id="home-logo" src="images/logo-small.png" alt="Stephanie Tran's logo"/>
 		</section>
+
+		<!-- About Section -->
 		<section id="about">
 			<div id="clouds">
 				<img src="images/clouds-mobile.png" alt="Clouds from Super Mario"></div>
 				<div id="about-text">
-					<img class="img-circle flip" src="images/stephtran.jpg">
+					<img class="img-circle flip" src="images/stephtran.jpg" alt="A photo of my face.">
 					<div id="about-details">
-						<h3>I'm Stephanie.</h3><br/>
-						<p><b>Toronto, ON</b></p><br/>
+						<h1>I'm Stephanie.</h1><br/>
+						<span id="city"><em>Toronto, ON</em></span><br/>
 						<ul>
 							<li>
 								I enjoy building things. 
@@ -44,7 +48,7 @@
 		<!-- Connect -->
 		
 		<section id="connect">
-				<h2>Connect</h2>
+				<h3>Connect</h3>
 					<div id="social-media">
 						<a href="https://twitter.com/ItsStephTran" alt="Stephanie Tran's Twitter">
 							<span class="fa fa-twitter-square"></span> 

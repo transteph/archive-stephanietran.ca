@@ -1,11 +1,11 @@
 		<section id="portfolio">
-				<h1>Portfolio</h1>
+				<h2>Portfolio</h2>
 
 				<div class="grid">
 						<figure class="effect-julia">
 							<img src="images/react-app-screenshot.PNG" alt="Screenshot of the application page."/>
 							<figcaption>
-								<h2>Overview <span>React App</span></h2>
+								<h3>Overview <span>React App</span></h3>
 								<div>
 									<p>React, Node.js, Express, MongoDB, Javascript, jQuery, Bootstrap, HTML, CSS</p>
 								</div>
@@ -16,7 +16,7 @@
 						<figure class="effect-julia striped">
 							<img src="images/refugee-champions-site-stephanie-tran-amnesty-international-canada.jpg" alt="Screenshot of Amnesty International Canada's Refugee Champions website."/>
 							<figcaption>
-								<h2>Refugee <span>Champions</span></h2>
+								<h3>Refugee <span>Champions</span></h3>
 								<div>
 									<p>WordPress, PHP, jQuery, CSS3</p>
 								</div>
@@ -25,9 +25,9 @@
 						</figure>
 
 						<figure class="effect-julia striped">
-							<img src="images/reel-awareness-aito-stephanie-tran.jpg" alt="Screenshot of Amnesty International Toronto Organization's Reel Awareness Film Festival and Film Series website."/>
+							<img src="images/reel-awareness-aito-stephanie-tran.jpg" alt="Screenshot of Reel Awareness website."/>
 							<figcaption>
-								<h2>Reel <span>Awareness</span></h2>
+								<h3>Reel <span>Awareness</span></h3>
 								<div>
 									<p>WordPress, PHP, jQuery, CSS3</p>
 								</div>
@@ -39,7 +39,7 @@
 						<figure class="effect-julia striped">
 							<img src="images/ko-db.PNG" alt="screenshot of application page."/>
 							<figcaption>
-								<h2>Teams<span>Database App</span></h2>
+								<h3>Teams<span>Database App</span></h3>
 								<div>
 									<p>Node.js, Express, MongoDB, Javascript, jQuery, Bootstrap, Knockout.js, HTML, CSS</p>
 								</div>
@@ -50,7 +50,7 @@
 						<figure class="effect-julia striped">
 							<img src="images/madlibs.png" alt="img22"/>
 							<figcaption>
-								<h2>PHP<span>Mad Libs</span></h2>
+								<h3>PHP<span>Mad Libs</span></h3>
 								<div>
 									<p>HTML, CSS &amp; PHP</p>
 								</div>
@@ -61,7 +61,7 @@
 						<figure class="effect-julia striped">
 							<img src="images/calendar.png" alt="Stephanie Tran's Calendar site."/>
 							<figcaption>
-								<h2>HTML<span>Calendar</span></h2>
+								<h3>HTML<span>Calendar</span></h3>
 								<div>
 									<p>HTML, CSS, JavaScript, jQuery</p>
 									

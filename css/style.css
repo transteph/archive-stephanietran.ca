@@ -103,7 +103,7 @@ a {
 	font-family: 'Ubuntu', helvetica, ;
 	font-weight: 300;
 }
-b{
+strong{
 	font-weight:500;
 }
 
@@ -112,43 +112,18 @@ b{
 	position:absolute;
 	left:20%;
 }
-#intro h1 {
+section {
+	overflow: hidden;
+	padding: 60px 10%;
+	box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+#hello-header {
 	display: inline-block;
 	color: white;
 	font-family: 'Righteous', serif;
 	font-size: 12em; 
 	text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
 	}
-	#intro h1:after {
-	  content: attr(data-shadow);
-	  position: absolute;
-	  top: .06em; left: .06em;
-	  z-index: -1;
-	  text-shadow: none;
-	  background-image:
-		linear-gradient(
-		  45deg,
-		  transparent 45%,
-		  hsla(48,20%,90%,1) 45%,
-		  hsla(48,20%,90%,1) 55%,
-		  transparent 0
-		  );
-	  background-size: .05em .05em;
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-	
-	  animation: shad-anim 15s linear infinite;
-	  }
-  
-  @keyframes shad-anim {
-	0% {background-position: 0 0}
-	0% {background-position: 100% -100%}
-	}
-section {
-	overflow: hidden;
-	padding: 60px 10%;
-	box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.3);
-}
 
 #intro {
 	height:50vh;
@@ -188,7 +163,7 @@ section {
 	color: white;
 	overflow:hidden;
 }
-#about h2{
+#about h1{
 	display:block;
 	width:100%;
 	text-shadow: -5px 6px #2c2c2c;
@@ -202,7 +177,7 @@ section {
 	position: relative;
 	z-index: 600;
 }
-#about h3{
+#about #city {
 	font-size:130%;
 	font-weight:500;
 	font-family:'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -230,9 +205,13 @@ section {
 	color: #ffffff;
 	color: white;
 	background-color: black;
-	padding: 2px 7px;
+	padding: 6px 8px;
 	font-size:18px;
 	display: inline-block;
+}
+/* Emoji styling overrides */
+.em{
+	vertical-align: top !important;
 }
 
 #clouds {
@@ -250,7 +229,7 @@ section#portfolio{
 	background-color:white;
 }
 
-#portfolio h1 {
+#portfolio h2 {
 	color: #6AC8C8;
 	text-shadow: -5px 6px #106671;
 	text-align: center;
@@ -275,7 +254,7 @@ section#connect {
 	margin-top: 20px;
 }
 
-#connect h2 {
+#connect h3 {
 	color: white;
 	text-shadow: -5px 6px #f00b6c;
 	text-align: center;
@@ -495,16 +474,16 @@ footer p{
 		position: relative;
 		z-index: 600;
 	}
-	.about h2 {
+	.about h1 {
 		margin-bottom: 10px;
 		font-size: 200%;
 		z-index: 12;
 	}
-	#about-text h2,
-	#about-text p {
+	#about-text h1,
+	#about-text span{
 		text-align: left;
 	}
-	#about-text p {
+	#about-text #city {
 		margin-top:10px;
 		font-size:100%;
 	}
@@ -515,14 +494,14 @@ footer p{
 		
 	}
 	/* Desktop Portfolio page */
-	#portfolio h1 {
+	#portfolio h2 {
 		padding-bottom: 10px;
 	}
 	/*  connect Page */
 	#connect p {
 		font-size: 13px;
 	}
-	#connect h2 {
+	#connect h3 {
 		font-size: 450%;
 		line-height: 1;
 		margin-bottom: 20px;
