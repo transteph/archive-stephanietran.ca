@@ -18,8 +18,10 @@
 
 		<!-- Top Section -->
 		<section id="intro">
-				<span id="hello-header" data-shadow="Hello!">Hello!</span>
+			<div id="logo-container">
 				<img id="home-logo" src="images/logo-small.png" alt="Stephanie Tran's logo"/>
+			</div>
+				<span id="hello-header" data-shadow="Hello!">Hello!</span>
 		</section>
 
 		<!-- About Section -->
@@ -27,19 +29,41 @@
 			<div id="clouds">
 				<img src="images/clouds-mobile.png" alt="Clouds from Super Mario"></div>
 				<div id="about-text">
-					<img class="img-circle flip" src="images/stephtran.jpg" alt="A photo of my face.">
+					<div id="profile-img-container"><img class="img-circle flip" src="images/stephtran.jpg" alt="A photo of my face."></div>
+					<div id="about-details-container">
 					<div id="about-details">
-						<h1>I'm Stephanie.</h1><br/>
-						<span id="city"><em>Toronto, ON</em></span><br/>
-						<ul>
-							<li>
-								I enjoy building things. 
-									<span role="img" aria-label="Computer">
-										<i class="em em-computer"></i>
-									</span>
-						</li>
-						</ul>
+							<h1>I'm Stephanie.</h1><br/>
+							<span id="city"><em>Toronto, ON</em></span>
+							<ul>
+									<li>
+										I enjoy building things* 
+											<span role="img" aria-label="Computer">
+												<i class="em em-computer"></i>
+											</span>
+									</li> 
+									<li>
+										* Accessible things 
+											<span role="img" aria-label="Globe">
+											<i class="em em-globe_with_meridians"></i>
+											</span>
+								</li>
+								<li>
+										* Inclusive things
+											<span role="img" aria-label="Open hands">
+												<i class="em em-open_hands"></i>
+											</span>
+								</li>
+								<li>
+										* Things with not just good intentions <span role="img" aria-label="Two hearts"><i class="em em-two_hearts"></i></span> but with carefully and critically thought-out outcomes 
+											<span role="img" aria-label="Magnifying glass">
+												<i class="em em-mag"></i>
+											</span>
+								</li>
+							</ul>
+						</div>
+
 					</div>
+						
 				</div>
 		</section>
 

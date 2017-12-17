@@ -51,14 +51,12 @@ table {
 
 #social-media a {
 	font-size: 300%;
-	color: white;
+	color: black;
 	padding: 10px;
 	transition: all 0.3s;
+	text-shadow: -8px 7px white;
 }
 
-#social-media a:visited {
-	color: black;
-}
 
 #social-media a:hover {
 	color: #D92A7B;
@@ -67,12 +65,12 @@ table {
 	width:100%;
 	overflow:hidden;
 }
-
+/*
 main{
 	transform: translateX(-5000px);
 	z-index: 1;
 }
-
+*/
 body {
 	font-family: 'Ubuntu', helvetica, sans-serif ;
 	font-weight: 300;
@@ -84,11 +82,6 @@ body {
 	background: linear-gradient(to left, #F15F79, #B24592);
 }
 
-h1 {
-	font-size: 4.4em;
-}
-
-h1,
 h2,
 h3,
 h4,
@@ -100,7 +93,7 @@ h6 {
 
 a {
 	text-decoration: none;
-	font-family: 'Ubuntu', helvetica, ;
+	font-family: 'Ubuntu', helvetica, sans-serif;
 	font-weight: 300;
 }
 strong{
@@ -115,25 +108,32 @@ strong{
 section {
 	overflow: hidden;
 	padding: 60px 10%;
-	box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 #hello-header {
-	display: inline-block;
 	color: white;
 	font-family: 'Righteous', serif;
-	font-size: 12em; 
+	font-size: 23vw; 
 	text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
 	}
 
 #intro {
-	height:50vh;
 	overflow: hidden;
-	background-color: #DB59A1;
-	background-image: url(../images/sprinkles-bg-mobile.png);
-	background-position: left;
-	background-repeat: repeat-y;
+	padding:20px;
+	background: #d82b96; /* Old browsers */
+	background: -moz-linear-gradient(top, #d82b96 0%, #d82b96 16%, #3fbfff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #d82b96 0%,#d82b96 16%,#3fbfff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #d82b96 0%,#d82b96 16%,#3fbfff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d82b96', endColorstr='#3fbfff',GradientType=0 ); /* IE6-9 */
+	min-height:60vh;
+	text-align: center;
+	
+}
+#logo-container{
+	width:100%;
+	overflow:hidden;
 }
 #home-logo {
+		display:inline-block;
     position: relative;
     transition: all 0.3s ease-in;
     width: 20%;
@@ -158,18 +158,32 @@ section {
 	-webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+#profile-img-container{
+	width:100%;
+	text-align: center;
+}
+.img-circle {
+	display:inline-block;
+	float:none;
+	border-radius: 50%;
+	width:150px;
+	border:2px solid white;
+	box-shadow:1px 1px 8px rgba(0, 0, 0, 0.264);
+	margin-bottom: 20px;
+}
 #about {
 	background-color: #3FBFFF;
 	color: white;
 	overflow:hidden;
+	position: relative;
 }
 #about h1{
-	display:block;
-	width:100%;
-	text-shadow: -5px 6px #2c2c2c;
-	line-height: 0.8;
-	font-size: 4.4em;
-	padding: 20px 0px 20px 0px;
+	font-size: 150%;
+	font-weight: 500;
+	font-family: 'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: black;
+	padding: 7px;
+	display: inline-block;
 }
 #about-text{
 	width:100%;
@@ -178,37 +192,42 @@ section {
 	z-index: 600;
 }
 #about #city {
-	font-size:130%;
+	font-size:90%;
 	font-weight:500;
 	font-family:'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	background-color: black;
 	padding: 7px;
 	display: inline-block;
+	margin-top: 5px;
 }
-.img-circle {
-	float:none;
-	border-radius: 50%;
-	width:150px;
-	border:2px solid white;
-	box-shadow:1px 1px 8px rgba(0, 0, 0, 0.264);
-	margin-bottom: 20px;
-}
+
 
 #about-details{
 	width: 100%;
+	text-align: center;
 }
 #about-text ul{
 	margin-top:20px;
+	padding:10px;
 }
 #about-text p,
 #about-text ul li {
 	color: #ffffff;
 	color: white;
-	background-color: black;
-	padding: 6px 8px;
-	font-size:18px;
-	display: inline-block;
+	font-size:17px;
+	text-align: left;
+	text-shadow: 0px 0px 20px black;
+	font-weight: 500;
 }
+#about-text ul li:first-child{
+	font-size:3em;
+	margin-bottom:35px;
+	text-align: center;
+	text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+	font-family: 'Righteous', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	width: 100%;
+}
+
 /* Emoji styling overrides */
 .em{
 	vertical-align: top !important;
@@ -241,7 +260,10 @@ section#portfolio{
 /*  connect Page */
 
 section#connect {
-	background-color: rgb(32, 197, 222);
+	background: #74ebd5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
 	color: white;
 	text-align: center;
 }
@@ -408,16 +430,7 @@ footer p{
 	.col-14 {
 		width: 25%;
 	}
-	#sprinkles {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 36%;
-		height: 100%;
-		background-image: url(../images/sprinkles-bg.png);
-		background-size: cover;
-		background-repeat: repeat-y;
-	}
+
 	/* -- Desktop Nav -- */
 	
 	#nav,
@@ -430,7 +443,6 @@ footer p{
 	#nav {
 		position: relative;
 		opacity: 1;
-		height: 4vh;
 		display: block;
 		width: 100%;
 		background: rgb(255, 255, 255);
@@ -449,27 +461,40 @@ footer p{
 		color: black;
 		padding:5px 0px;
 	}
+	#nav li a:hover{
+		color:#d82b96;
+	}
 	nav a {
 		color: #121212;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		font-weight: 300;
+		font-weight: 500;
 		text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+		font-size: 80%;
+		transition:all 0.2s ease-in;
 	}
+	#hello-header {
+		font-size: 20vw; 
+		}
+		#intro{
+			min-height:50vh;
+		}
 	/* Desktop About Page */
 	.img-circle {
 		min-width:150px;
 		width:30%;
-
-		float:left;
 		border-radius: 50%;
 		border:2px solid white;
 		box-shadow:1px 1px 8px rgba(0, 0, 0, 0.264);
 		margin-bottom: 20px;
 	}
-	#about-text {
-		float: left;
+	#about-details-container{
+		overflow:hidden;
 		width: 85%;
+		margin: 0 auto;
+	}
+	#about-text {
+		margin:0 auto;
 		display: block;
 		position: relative;
 		z-index: 600;
@@ -485,13 +510,7 @@ footer p{
 	}
 	#about-text #city {
 		margin-top:10px;
-		font-size:100%;
-	}
-	#about-details{
-		float:left;
-		margin-left:10px;
-		width:65%;
-		
+		font-size:90%;
 	}
 	/* Desktop Portfolio page */
 	#portfolio h2 {
@@ -508,14 +527,7 @@ footer p{
 		color: white;
 		text-shadow: -5px 6px #f00b6c;
 	}
-	#sprinkles:hover {
-		-moz-transform: scaleX(-1);
-		-o-transform: scaleX(-1);
-		-webkit-transform: scaleX(-1);
-		transform: scaleX(-1);
-		filter: FlipH;
-		-ms-filter: "FlipH";
-	}
+
 }
 
 

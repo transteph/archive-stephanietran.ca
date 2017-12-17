@@ -1,5 +1,5 @@
 .grid{position:relative;clear:both;margin:0 auto;max-width:1000px;padding:0px;list-style:none;text-align:center;}
-.grid figure{position:relative;float:left;overflow:hidden;margin:5px;max-width:45%;max-height:24vh;text-align:center;}
+.grid figure{position:relative;float:left;overflow:hidden;margin: 10px 0px;max-width:100%;max-height:28vh;text-align:center;}
 .grid figure img{position:relative;display:block;height:100%;width:100%;opacity:0.6;}
 .grid figure figcaption{padding:2px;padding-top:20%;color:#fff;text-transform:uppercase;font-size:13px;}
 .grid figure figcaption::before,
@@ -45,6 +45,35 @@ figure.effect-julia h3{position:relative;padding:0.5em 0;color:#fcfcfc;opacity:1
 figure.effect-julia p{display:inline-block;margin:0 0 0.25em;padding:0.4em 1em;background:rgba(255,255,255,0.9);color:#2f3238;text-transform:none;font-weight:500;font-size:75%;-webkit-transition:opacity 0.35s, -webkit-transform 0.35s;transition:opacity 0.35s, transform 0.35s;-webkit-transform:translate3d(-360px,0,0);transform:translate3d(-360px,0,0);}
 figure.effect-julia p:first-child{-webkit-transition-delay:0.15s;transition-delay:0.15s;}
 figure.effect-julia p:nth-of-type(2){-webkit-transition-delay:0.1s;transition-delay:0.1s;}
+
+@media only screen and (max-width: 450px) {
+  figure.effect-julia p{
+    opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);
+  }
+
+}
+
+
+@media only screen and (min-width: 450px) and (max-width: 820px) {
+  .grid figure{
+    max-height: 35vh;
+    width: 47%;
+    margin-left: 5px;
+  }
+
+}
 @media only screen and (min-width:820px){.grid{max-width:100%;}
-.grid figure{max-width:32%;max-height:40vh;}
+.grid figure{max-width:29%;max-height:40vh;margin:5px;}
+  .grid figure h3{
+    font-size: 1.3em;
+  }
+  figure.effect-julia h3{
+    padding: 0.2em 0;
+  }
+  .grid figure figcaption{
+    padding-top: 15%;
+  }
+  figure.effect-julia p{
+    font-size: 90%;
+  }
 }
