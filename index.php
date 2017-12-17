@@ -5,11 +5,9 @@
     // create array for error messsages
 		$errors = array();
 	?>
-
-<div id="loader">
-	
-</div>
-
+	<div id="loader">
+		<img src="images/loader.gif" alt="Sprinkles loader"/>
+	</div>
 <div class="container">
 	<!--  M A I N -->
 	<main>

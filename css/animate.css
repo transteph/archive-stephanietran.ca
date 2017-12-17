@@ -5,3 +5,29 @@ to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
 to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
 }
 .slideInRight{-webkit-animation-name:slideInRight;animation-name:slideInRight;}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flip {
+  from{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  to{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}

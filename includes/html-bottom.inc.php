@@ -9,14 +9,14 @@
 <script src="js/jquery.transit.min.js" type="text/javascript"></script>
 <script src="https://use.fontawesome.com/b0dba73639.js"></script>
 <script>
-	/*
+	
 	$(window).load(function(){
-	$('main').transition({ x: '0px', delay:800 }, 2000, 'snap');
-	$('#loader').setTimeout(() => {
-	hide(); 
-	}, 3000);
+		$.when( $('main').transition({ x: '0px', delay:800 }, 2000, 'snap') )
+			.then( setTimeout(function(){
+				$('#loader').hide();
+			},2000));
 	});
-	*/
+	
 </script>
 </body>
 </html>
