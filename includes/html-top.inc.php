@@ -17,38 +17,11 @@
         <link rel="icon" type="image/png" href="favicon.gif" />
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/gridhover.css" />
-        <link rel="stylesheet" type="text/css" href="css/animate.css" />
-        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Righteous|Ubuntu:300,500" rel="stylesheet">
          <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
         <![endif]-->
-       
-        	<!-- jQuery -->
-        <script
-        src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous"></script>
-
-        <script src="https://use.fontawesome.com/b0dba73639.js"></script>
-         <!--  Google Analytics   -->
-         <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-76008029-1', 'auto');
-            ga('send', 'pageview');
-        </script>
+        
     </head>
 
     <body id="<?php echo strtolower ( $page_title ); ?>">

@@ -5,18 +5,13 @@
 </div>
 
 <!-- scripts -->
-<script src="js/main.js" type="text/javascript"></script>
-<script src="js/jquery.transit.min.js" type="text/javascript"></script>
-<script src="https://use.fontawesome.com/b0dba73639.js"></script>
-<script>
-	
-	$(window).load(function(){
-		$.when( $('main').transition({ x: '0px', delay:800 }, 2000, 'snap') )
-			.then( setTimeout(function(){
-				$('#loader').hide();
-			},2000));
-	});
-	
-</script>
+<!-- jQuery -->
+<script	defer="true"
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script defer="true" src="js/main.js" type="text/javascript"></script>
+<script defer="true"  src="js/jquery.transit.min.js" type="text/javascript"></script>
+<script defer="true"  src="https://use.fontawesome.com/b0dba73639.js"></script>
 </body>
 </html>

@@ -1,1 +1,0 @@
-Emoji rendering thanks to [afeld/emoji-css](https://github.com/afeld/emoji-css).

@@ -36,25 +36,25 @@
 									<li>
 										I enjoy building things* 
 											<span role="img" aria-label="Computer">
-												<i class="em em-computer"></i>
+											💻
 											</span>
 									</li> 
 									<li>
 										* Accessible things 
 											<span role="img" aria-label="Globe">
-											<i class="em em-globe_with_meridians"></i>
+											🌐
 											</span>
 								</li>
 								<li>
 										* Inclusive things
 											<span role="img" aria-label="Open hands">
-												<i class="em em-open_hands"></i>
+											👐
 											</span>
 								</li>
 								<li>
 										* Things with not just good intentions <span role="img" aria-label="Two hearts"><i class="em em-two_hearts"></i></span> but with carefully and critically thought-out outcomes 
 											<span role="img" aria-label="Magnifying glass">
-												<i class="em em-mag"></i>
+											🔍
 											</span>
 								</li>
 							</ul>
