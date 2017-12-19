@@ -3,6 +3,16 @@
     <html lang="en">
 
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76008029-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-76008029-1');
+        </script>
+
         <meta charset="UTF-8">
         <title>
             <?php echo $page_title; ?> -

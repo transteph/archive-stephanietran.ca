@@ -52,7 +52,7 @@
 											</span>
 								</li>
 								<li>
-										* Things with not just good intentions <span role="img" aria-label="Two hearts"><i class="em em-two_hearts"></i></span> but with carefully and critically thought-out outcomes 
+										* Things with not just good intentions <span role="img" aria-label="Two hearts">💓</span> but with carefully and critically thought-out outcomes 
 											<span role="img" aria-label="Magnifying glass">
 											🔍
 											</span>
