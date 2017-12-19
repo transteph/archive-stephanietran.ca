@@ -1,11 +1,18 @@
 $(document).ready(function(){
   
-	$(window).load(function(){
-		$.when( $('main').transition({ x: '0px', delay:800 }, 2000, 'snap') )
-			.then( setTimeout(function(){
-				$('#loader').hide();
-			},2000));
-	});
+	if ( !window.location.hash){
+		$(window).load(function(){
+			$.when( $('main').transition({ x: '0px', delay:800 }, 2000, 'snap') )
+				.then( setTimeout(function(){
+					$('#loader').hide();
+				},2000));
+		});
+	} else {
+		$(window).load(function(){
+			$('main').transition({ x: '0px'}).show();
+			$('#loader').hide();
+		});
+	}
   
   if($(window).width()>=820){
 		
