@@ -7,9 +7,9 @@
 							<figcaption>
 								<h3>Overview <span>React App</span></h3>
 								<div>
-									<p>React, Node.js, Express, MongoDB, Javascript, jQuery, Bootstrap, HTML, CSS</p>
+									<p>React, Node.js, npm, Express, MongoDB, Javascript, jQuery, Bootstrap, HTML, CSS</p>
 								</div>
-								<a href="http://portfolio.stephanietran.ca/react-app">View more</a>
+								<a href="https://portfolio.stephanietran.ca/react-app">View more</a>
 							</figcaption>			
 						</figure>
 
@@ -20,7 +20,7 @@
 								<div>
 									<p>WordPress, PHP, jQuery, CSS3</p>
 								</div>
-								<a href="http://portfolio.stephanietran.ca/iwelcome">View more</a>
+								<a href="https://portfolio.stephanietran.ca/iwelcome">View more</a>
 							</figcaption>			
 						</figure>
 
@@ -31,7 +31,7 @@
 								<div>
 									<p>WordPress, PHP, jQuery, CSS3</p>
 								</div>
-								<a href="http://portfolio.stephanietran.ca/reel-awareness">View more</a>
+								<a href="https://portfolio.stephanietran.ca/reel-awareness">View more</a>
 							</figcaption>			
 						</figure>
 
@@ -41,32 +41,32 @@
 							<figcaption>
 								<h3>Teams<span>Database App</span></h3>
 								<div>
-									<p>Node.js, Express, MongoDB, Javascript, jQuery, Bootstrap, Knockout.js, HTML, CSS</p>
+									<p>Node.js, Express, npm, MongoDB, Javascript, jQuery, Bootstrap, Knockout.js, HTML, CSS</p>
 								</div>
-								<a href="http://portfolio.stephanietran.ca/teams-db">View more</a>
+								<a href="https://portfolio.stephanietran.ca/teams-db">View more</a>
 							</figcaption>			
 						</figure>
 
 						<figure class="effect-julia striped">
-							<img src="images/madlibs.png" alt="img22"/>
+							<img src="images/madlibs.png" alt="Screenshot of Mad Libs website."/>
 							<figcaption>
 								<h3>PHP<span>Mad Libs</span></h3>
 								<div>
 									<p>HTML, CSS &amp; PHP</p>
 								</div>
-								<a href="http://portfolio.stephanietran.ca/madlibs/">View more</a>
+								<a href="https://portfolio.stephanietran.ca/madlibs/">View more</a>
 							</figcaption>			
 						</figure>
 						
 						<figure class="effect-julia striped">
-							<img src="images/calendar.png" alt="Stephanie Tran's Calendar site."/>
+							<img src="images/angular-app-cap.jpg" alt="Screenshot of Angular Employees Portal app."/>
 							<figcaption>
-								<h3>HTML<span>Calendar</span></h3>
+								<h3>Angular<span>Employees Portal</span></h3>
 								<div>
-									<p>HTML, CSS, JavaScript, jQuery</p>
+									<p>Angular, Angular CLI, Node.js, Express, npm, Typescript, Handlebars, Javascript, Bootstrap, HTML, CSS</p>
 									
 								</div>
-								<a href="http://portfolio.stephanietran.ca/calendar">View more</a>
+								<a href="https://portfolio.stephanietran.ca/angular-employees-portal/">View more</a>
 							</figcaption>			
 						</figure>
 
