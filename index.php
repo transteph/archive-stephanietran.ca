@@ -82,6 +82,9 @@
 						<a href="https://github.com/transteph" alt="Stephanie Tran's GitHub">
 							<span class="fa fa-github-square"></span> 
 						</a>
+						<a href="https://stephanietran.ca/stranpgp.asc" alt="PGP public key.">
+							<span class="fa fa-key"></span> 
+						</a>
 					</p>
 		</section>
 
