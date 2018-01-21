@@ -61,8 +61,7 @@ section{overflow:hidden;padding:60px 10%;}
 section#portfolio{background-color:white;}
 #portfolio h2{color:#6AC8C8;text-shadow:-5px 6px #106671;text-align:center;padding-top:5px;line-height:1;}
 section#connect{background:#74ebd5;background:-webkit-linear-gradient(to right, #ACB6E5, #74ebd5);background:linear-gradient(to right, #ACB6E5, #74ebd5);color:white;text-align:center;}
-#connect p{text-align:center;font-size:90%;color:white;width:100%;margin-top:20px;} #connect p{padding:5px;background-color:black;color:white; display:inline;font-size:16px;} #connect #pgp{font-size: 30px;
-  margin-left: 5px;text-shadow: -5px 3px white;}
+#connect p{text-align:center;font-size:90%;color:white;width:100%;margin-top:20px;} #connect p{padding:5px;background-color:black;color:white; display:inline;font-size:16px;}
 #connect h3{color:white;text-shadow:-5px 6px #f00b6c;text-align:center;padding-top:50px;line-height:1;margin-bottom: 30px;}
 footer{padding:50px 20px;text-align:center;color:white;background-color:rgb(81, 81, 81);}
 footer p{padding:20px;text-align:center;font-size:80%;text-transform:uppercase;letter-spacing:5px;}
