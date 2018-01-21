@@ -82,10 +82,13 @@
 						<a href="https://github.com/transteph" alt="Stephanie Tran's GitHub">
 							<span class="fa fa-github-square"></span> 
 						</a>
-						<a href="https://stephanietran.ca/stranpgp.asc" alt="PGP public key.">
-							<span class="fa fa-key"></span> 
-						</a>
-					</p>
+						<br/>
+			<p>PGP Public Key (links to file): </p>
+			<a href="https://stephanietran.ca/stranpgp.asc" id="pgp" alt="PGP public key.">
+				<span class="fa fa-key"></span>
+			</a>	
+					</div>
+			
 		</section>
 
 		<?php include( 'includes/html-bottom.inc.php' ); ?>
