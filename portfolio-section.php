@@ -18,20 +18,20 @@
 							<figcaption>
 								<h3>Refugee <span>Champions</span></h3>
 								<div>
-									<p>WordPress, PHP, jQuery, CSS3</p>
+									<p>WordPress, PHP, JavaScript, CSS3</p>
 								</div>
 								<a href="https://portfolio.stephanietran.ca/iwelcome">View more</a>
 							</figcaption>			
 						</figure>
 
 						<figure class="effect-julia striped">
-							<img src="images/reel-awareness-aito-stephanie-tran.jpg" alt="Screenshot of Reel Awareness website."/>
+							<img src="images/aito-screenshot.png" alt="Screenshot of AITO website."/>
 							<figcaption>
-								<h3>Reel <span>Awareness</span></h3>
+								<h3>Amnesty International <span>Toronto Organization</span></h3>
 								<div>
-									<p>WordPress, PHP, jQuery, CSS3</p>
+									<p>WordPress, PHP, JavaScript, CSS3</p>
 								</div>
-								<a href="https://portfolio.stephanietran.ca/reel-awareness">View more</a>
+								<a href="https://portfolio.stephanietran.ca/aito">View more</a>
 							</figcaption>			
 						</figure>
 
@@ -67,6 +67,17 @@
 									
 								</div>
 								<a href="https://portfolio.stephanietran.ca/angular-employees-portal/">View more</a>
+							</figcaption>			
+						</figure>
+						<figure class="effect-julia striped">
+							<img src="images/ai-youth.PNG" alt="Screenshot"/>
+							<figcaption>
+								<h3>Amnesty International Canada<span>Youth &amp; Student Program</span></h3>
+								<div>
+									<p>PHP, Wordpress, MySQL, Javascript, HTML, CSS</p>
+									
+								</div>
+								<a href="https://portfolio.stephanietran.ca/ai-canada-youth/">View more</a>
 							</figcaption>			
 						</figure>
 
